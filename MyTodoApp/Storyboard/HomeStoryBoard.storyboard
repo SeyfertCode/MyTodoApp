@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="g4r-kd-Tel">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="AHJ-Rp-0gL">
+            <objects>
+                <viewController id="GK1-8h-tfm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nCN-Ac-FDq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="lXX-u5-c1P"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="Lb1-aF-cry"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gzT-7H-Fuq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-81" y="236"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="ZJa-V4-4Pc">
+            <objects>
+                <viewController id="ZJM-Qz-QvG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="paj-xE-fPD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="S3I-mO-wzh"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="l13-7R-A6p"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w9Q-0D-uQl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-81" y="-429"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="6Ba-Ur-4dF">
+            <objects>
+                <tabBarController id="g4r-kd-Tel" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9qT-KL-9CT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ZJM-Qz-QvG" kind="relationship" relationship="viewControllers" id="a4z-bQ-AY3"/>
+                        <segue destination="GK1-8h-tfm" kind="relationship" relationship="viewControllers" id="vTP-GZ-rt7"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ky0-N6-Wqm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1033" y="-97"/>
+        </scene>
+    </scenes>
+</document>
