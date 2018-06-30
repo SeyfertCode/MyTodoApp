@@ -21,7 +21,11 @@ class SignInViewController: UIViewController {
 
         titleLabel.text = "Bienvenido"
     }
-
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        usernameTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
